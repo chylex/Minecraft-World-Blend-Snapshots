@@ -1,0 +1,18 @@
+<p>A Minecraft mod that enables 1.18's world blending for worlds created in 1.18 snapshots, since normally it only works for worlds created in 1.17.x and older.</p>
+<h2>Installation</h2>
+<p>The following mod loaders are supported:</p>
+<ul>
+  <li><strong><a href="https://fabricmc.net/use/">Fabric</a></strong> (note: this mod does not require Fabric API)</li>
+  <li><strong><a href="https://files.minecraftforge.net/">Forge</a></strong></li>
+</ul>
+<p>After you install the mod loader of your choice, <a href="https://www.curseforge.com/minecraft/mc-mods/world-blend-snapshots/files">download the mod</a> and place the <code>.jar</code> file into <code>.minecraft/mods</code>.</p>
+<h2>How to Use</h2>
+<p>This mod <strong>requires</strong> Minecraft 1.18.1 or newer. It will <strong>only</strong> blend chunks which have been saved by previous versions, so it will not work if you already opened your world in 1.18.1 or newer, and loaded chunks at the edge of the world.</p>
+<ul>
+  <li>1. Install Minecraft 1.18.1</li>
+  <li>2. Install the mod</li>
+  <li>3. Create a backup of your world now, and continue making regular backups of every world you play on, regardless of whether you use this mod or not</li>
+  <li>4. Load your world in Minecraft 1.18.1 with this mod installed</li>
+</ul>
+<p>If you already opened the world in 1.18.1 and the mod isn't working because some chunks have been re-saved in 1.18.1, you could try using a tool like <a href="https://github.com/Querz/mcaselector">MCA Selector</a>, select all edge chunks, and change their <code>DataVersion</code> tag to <code>2864</code> (i.e. one version before 1.18.1). Note that blending is only applied to newly generated chunks, which are adjacent to existing chunks saved before 1.18.1. If you already generated new chunks in 1.18.1, you will need to delete them.</p>
+<p>In the future, I might improve this mod to also work with worlds that have already been opened in 1.18.1, but only if there is enough interest.</p>
